@@ -3,7 +3,7 @@ package tallercolas;
 
 
 public class Cola2 {
-
+//COLAS CON LISTA ENLAZADA SIMPLE
   class Node {
     Object elem;
     Node Next;
@@ -42,7 +42,8 @@ public class Cola2 {
     primero = primero.Next;
     tamaño--;
     return o;
-  } // Obtiene el objeto de la cola
+  } 
+  // Obtiene el objeto de la cola
 
   public boolean vacio() {
     return (tamaño == 0);
