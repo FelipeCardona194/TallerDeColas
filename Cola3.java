@@ -1,7 +1,7 @@
 package tallercolas;
 
 public class Cola3  {
-
+// COLAS CON LISTA DOBLEMENTE ENLAZADA 
   public class Nodo {
     Nodo next;
     Nodo anterior;
