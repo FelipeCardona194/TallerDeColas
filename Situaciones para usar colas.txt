@@ -1,0 +1,38 @@
+Ejemplo práctico de teoría de colas:
+
+Centro de reparación Apple Store
+
+1) El servicio técnico de la tienda Apple Store debe hacer todos los cambios de batería del Iphone, pero hay algunos casos en los que se complica ya que deben por 
+política de empresa, cambiar la pantalla.El tiempo de reparación está distribuido de forma exponencial con una media de 30 minutos por teléfono entre abrir cambiar 
+la batería, cerrar y comprobar. A pesar de que hay cita previa, nadie llega exactamente a la hora y los clientes con su teléfono van llegando durante todo el día.
+Asumiremos por facilidad, que ese día no sacan ningún teléfono nuevo, y los clientes llegan de forma más o menos escalonada. Para reparaciones: Llegan de media 10
+al día en las 8 horas que está abierta la tienda. Queremos conocer cuál es la capacidad de reparación y cuanto tiempo está el servicio técnico sin reparar teléfonos. 
+Como la tasa de llegada de teléfonos (lambda) es de 10/8 teléfonos a la hora. 
+MU (tasa de reparación) es de 2 teléfonos a la hora. 
+
+ro = lambda / mu = 
+Ro0= 1- lambda / mu = 1 – 5/8=3/8
+
+2) Sistema de cola multi-canal: Son principalmente los
+cajeros de un banco en los cuales hay una sola cola y
+varias personas atendiendo a los clientes en diversas
+cajas.
+
+3) Sistema de una sola fase: es aquel en el cual el cliente
+recibe el servicio de una sola estación y luego abandona
+el sistema. Un restaurant de comida rápida en el cual la
+persona que toma la orden también le entrega el alimento
+y cobra, es un sistema de una sola fase
+
+4) Sistema multifase: cuando se pone la orden en una
+estación, se paga en una segunda y se retira lo adquirido
+en una tercera
+
+5)Vamos a poner en práctica la teoría de colas que he explicado 
+anteriormente con un ejemplo práctico, tenemos una peluquería de 
+la que sabemos que los clientes llegan de forma totalmente aleatoria, 
+siendo su tasa media de llegada unos 40 min. Cada corte de pelo lleva 
+unos 20 min. En la peluquería trabaja un único peluquero pero están pensando
+contratar a otro. Calcular las medidas para los 2 modelos y ver si merece o
+no la pena contratar un segundo peluquero.
+
